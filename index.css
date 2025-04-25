@@ -10,7 +10,8 @@ nav,
 .pixelgrade-section,
 .helping-section,
 .community,
-.our-client {
+.our-client,
+.blog {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -315,7 +316,6 @@ nav {
   font-size: 16px;
   line-height: 150%;
   color: #717171;
-  text-wrap: wrap;
 }
 
 .pixelgrade-left-section > span:first-child,
@@ -731,6 +731,67 @@ section.banner-container {
   display: none;
 }
 
+.blog {
+  width: 100%;
+  background-color: #fff;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.blog-heading {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 122%;
+  text-align: center;
+  color: #4d4d4d;
+}
+
+.blog-description {
+  font-weight: 400;
+  color: #717171;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.blog-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+}
+
+.blog-items > .blog-item {
+  height: auto;
+  width: 300px;
+  flex: 1;
+  border-radius: 8px;
+  position: relative;
+}
+
+.blog-items > .blog-item > img {
+  width: 100%;
+}
+
+.blog-item-text-overlay{
+  position: absolute;
+  width: 80%;
+  height: 150px;
+  background-color: rgb(246, 247, 251);
+  box-shadow: 0 3px 5px 0 rgba(171, 190, 209, 0.4);
+  top: 150px;
+  border-radius: 8px;
+  margin: auto;
+  left: 10%;
+  box-shadow: 0 3px 5px 0 rgba(171, 190, 209, 0.4);
+}
+
 @media (min-width: 1024px) {
   nav,
   .banner-container,
@@ -738,7 +799,8 @@ section.banner-container {
   .community,
   .pixelgrade-section,
   .helping-section,
-  .signup-section {
+  .signup-section,
+  .blog {
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -859,14 +921,13 @@ section.banner-container {
 
   .pixelgrade-section {
     display: flex;
-    gap: 50px;
-    /* padding-left: 300px; */
+    padding-left: 300px;
   }
 
   .pixelgrade-main-section {
     display: flex;
     align-items: center;
-    /* width: 60%; */
+    width: 60%;
     height: 268px;
     padding-top: 100px;
   }
@@ -874,7 +935,7 @@ section.banner-container {
   .pixelgrade-left-section {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
   }
 
   .pixelgrade-left-section > span {
@@ -891,8 +952,8 @@ section.banner-container {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    max-width: 550px;
-    /* height: 80px; */
+    width: 570px;
+    height: 80px;
   }
 
   .pixelgrade-left-section > span:first-child,
@@ -910,7 +971,7 @@ section.banner-container {
   }
 
   .pixelgrade-image > img {
-    /* max-width: 120%; */
+    max-width: 120%;
     max-height: 120%;
     align-self: center;
     object-fit: contain;
@@ -1045,7 +1106,7 @@ section.banner-container {
   .signup-left-section {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
   }
 
   .signup-left-section > span {
@@ -1062,7 +1123,7 @@ section.banner-container {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    max-width: 560px;
+    width: 560px;
     height: 120px;
   }
 
@@ -1085,8 +1146,9 @@ section.banner-container {
     object-fit: contain;
     object-position: center;
   }
-}
 
-@media (min-width: 1800px){
-  
+  .blog-items{
+    flex-direction: row;
+    gap: 15px;
+  }
 }
