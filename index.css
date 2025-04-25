@@ -231,6 +231,7 @@ nav {
 
 .community-logo {
   justify-content: space-between;
+  align-self: center;
   padding-right: 72px;
   padding-left: 72px;
 }
@@ -707,6 +708,7 @@ section.banner-container {
   height: 100%;
   padding: 0px 20px;
   box-sizing: border-box;
+  background-color: #FFFFFF;
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 1);
 }
 .mobile-nav > ul {
@@ -814,6 +816,7 @@ section.banner-container {
   .community-logo {
     display: flex;
     justify-content: space-between;
+    align-self: normal;
     min-height: 100px;
     padding-right: 144px;
     padding-left: 144px;
