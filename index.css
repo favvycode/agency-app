@@ -878,6 +878,14 @@ section.banner-container {
   text-align: center;
 }
 
+@media (max-width: 1023px)  {
+.helping-section {
+  display: flex;
+  justify-content: center;
+}
+
+}
+
 @media (min-width: 1024px) {
 
   nav,
